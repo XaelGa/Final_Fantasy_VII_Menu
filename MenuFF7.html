@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Menu that looks like Final Fantasy</title>
+	<meta charset="UTF-8">
+	<meta name="description" content ="Menus">
+	<meta name="Keywords"	content="Menu, FF7, Classic">						 
+	<link rel="stylesheet" href="MenuFF7.css">	 
+	<script src="lowLag.js"></script>
+    <script src="/sm2/js/soundmanager2.js"></script>
+    <script src="//code.jquery.com/jquery-1.8.0.min.js"></script>   
+</head>
+<body>
+	<div id ="screen"></div>
+ 	<div id="group">
+		<header id="header">
+			<hgroup>
+				<h1 class = "extra">Final Fantasy Style Menu</h1>
+				<h2 class = "extra">-Final Fantasy VII-</h2>
+			</hgroup>
+		</header>
+
+		<nav id="nav">
+		</nav>
+
+		<audio id = "controls" class = "extra" controls="controls" autoplay="autoplay" loop>
+			<source id = "music" src="audio/music/Barret's Theme.mp3" type="audio/mp3"/>
+		</audio>
+
+		<txt id = "brand" class = "extra">&copy;Leon A.G.A.</txt>
+		
+		<img id = "left" class = "extra" src = "img\FF7CursorLeft.png">
+		
+		<img id = "right" class = "extra" src = "img\FF7Cursor.png">
+		
+		<txt id = "instructions" class = "extra">Press "h" to hide and unhide the extras, arrow keys to move.</txt>
+
+		<section id="section">	
+
+			<article id="firstCharacter">
+				<figure class = "photoContainer"><img id = "firstPosition" class="photo" src="img\Cloud.jpg"></figure>
+				<table id = "firstStats" class = "statsTable">
+					<tr>
+						<td COLSPAN="3" id ="firstName">Cloud</td>
+					</tr>
+					<tr>
+						<td class="lv">LV</td>
+						<td COLSPAN="2" id="firstLevel">9<span id ="firstStatus"></span></td>
+					</tr>
+					<tr>
+						<td class="hp">HP<div id = "firstHpBar" class ="hpBar"></div><div class = "hpBarFont"></div></td>
+						<td id ="firstHpMin">333/</td>
+						<td id ="firstHpMax">333</td>
+					</tr>
+					<tr>
+						<td class="mp">MP<div id = "firstMpBar" class ="mpBar"></div><div class = "mpBarFont"></div></td>
+						<td id ="firstMpMin">63/</td>
+						<td id ="firstMpMax">63</td>
+					</tr>
+				</table>
+				<table id ="firstLevels" class = "levelsTable">
+						<tr>
+							<td>next level<div id ="firstLevelBar" class ="levelBar"></div><div class = "levelBarFont"></div></td>
+						</tr>
+						<tr>
+							<td>&nbsp</td>
+						<tr/>
+						<tr>
+							<td id ="firstLimitLevel">Limit level &nbsp;1<div id ="firstLimitBar" class = "limitBar"></div><div class = "limitBarFont"></div></td>
+						</tr>
+					</table>
+			</article>
+			
+			<article id="secondCharacter">
+					<figure class = "photoContainer"><img id = "secondPosition" class="photo" src="img\Barret.jpg"></figure>
+					<table id = "secondStats" class ="statsTable">
+						<tr>
+							<td COLSPAN="3" id ="secondName">Barret</td>
+						</tr>
+						<tr>
+							<td class="lv">LV</td>
+							<td COLSPAN="2" id ="secondLevel">7<span id ="secondStatus"></span></td>
+						</tr>
+						<tr>
+							<td class="hp">HP<div id ="secondHpBar" class ="hpBar"></div><div class = "hpBarFont"></div></td>
+							<td id ="secondHpMin">341/</td>
+							<td id ="secondHpMax">341</td>
+						</tr>
+						<tr>
+								<td class="mp">MP<div id ="secondMpBar" class="mpBar"></div><div class = "mpBarFont"></div></td>
+								<td id="secondMpMin">48/</td>
+								<td id ="secondMpMax">48</td>
+							</tr>
+					</table>
+					<table id = "secondLevels" class ="levelsTable">
+							<tr>
+								<td>next level<div id ="secondLevelBar" class ="levelBar"></div><div class = "levelBarFont"></div></td>
+							</tr>
+							<tr>
+									<td>&nbsp</td>
+							<tr/>
+							<tr>
+								<td id ="secondLimitLevel">Limit level &nbsp;1<div id ="secondLimitBar" class = "limitBar"></div><div class = "limitBarFont"></div></td>
+							</tr>
+						</table>
+			</article>
+
+				<article id="thirdCharacter">
+						<figure class = "photoContainer"><img id = "thirdPosition" class="photo" src="img\Tifa.jpg"></figure>
+						<table id = "thirdStats" class ="statsTable">
+							<tr>
+								<td COLSPAN="3" id ="thirdName">Tifa</td>
+							</tr>
+							<tr>
+								<td class="lv">LV</td>
+								<td COLSPAN="2" id ="thirdLevel">5<span id ="thirdStatus"></span></td>
+							</tr>
+							<tr>
+								<td class="hp">HP<div id ="thirdHpBar" class ="hpBar"></div><div class = "hpBarFont"></div></td>
+								<td id ="thirdHpMin">284/</td>
+								<td id ="thirdHpMax">284</td>
+							</tr>
+							<tr>
+									<td class="mp">MP<div id ="thirdMpBar" class ="mpBar"></div><div class = "mpBarFont"></div></td>
+									<td id ="thirdMpMin">41/</td>
+									<td id ="thirdMpMax">41</td>
+								</tr>
+						</table>
+						<table id = "thirdLevels" class ="levelsTable">
+								<tr>
+									<td>next level</div><div id ="thirdLevelBar" class ="levelBar"></div><div class = "levelBarFont"></div></td>
+								</tr>
+								<tr>
+										<td>&nbsp</td>
+								<tr/>
+								<tr>
+									<td id ="thirdLimitLevel">Limit level &nbsp;1<div id ="thirdLimitBar" class ="limitBar"></div><div class = "limitBarFont"></div></td>
+								</tr>
+							</table>
+					</article>
+			</section>
+	
+		<aside id="aside">
+			<ul id="menu">
+				<li number ="0">Item</li>
+				<li number ="1">Magic</li>
+				<li number ="2">Materia</li>
+				<li number ="3">Equip</li>
+				<li number ="4">Status</li>
+				<li number ="5">Order</li>
+				<li number ="6">Limit</li>
+				<li number ="7">Config</li>
+				<li number ="8" id = "phs"><br></li>
+				<li number ="9" id = "save">Save</li>
+				<li number ="10">Quit</li>
+			</ul>
+
+			<ul id="time">
+				<li>Time<span id ="currentTime">0<txt id = "colon">:</txt>58:26</span></li>
+				<li>Gil<span id ="gilAmount">435</span></li>
+			</ul>
+		</aside>
+
+		<footer id="footer">
+		 Sector 7 Slums
+		</footer>
+      
+	</div>	
+    <script src = "MenuFF7.js"> </script>
+</body>
+</html> 
