@@ -143,7 +143,7 @@ function keyPressed(e){
  function selection(tokenMenu){
    
     menuItems[tokenMenu].prepend(img); //Prepend append an element before the selected target.
-    menuItems[tokenMenu].prepend(div); //Using reference variables instead creating elements helps to no be removing each time.
+    menuItems[tokenMenu].prepend(div); //Using reference variables instead creating elements helps to no be removed each time.
 }
 
 //Function that calls the loadScreen and loadFile methods and manages the secuence of the screen changes.
