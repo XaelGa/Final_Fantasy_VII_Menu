@@ -37,7 +37,7 @@
         document.querySelector('#right').style.opacity = "1";
         document.querySelector('#left').style.opacity = "1";
     },false);
-    //Sets the opacity of the instructinos to 1 when the initial animation ends we use this instead animation-fill-mode to control the opacity with other function later.
+    //Sets the opacity of the instructions to 1 when the initial animation ends we use this instead animation-fill-mode to control the opacity with other function later.
     document.querySelector('#instructions').addEventListener("animationend", function(){
         document.querySelector('#instructions').style.opacity = "1";
     },false);     
