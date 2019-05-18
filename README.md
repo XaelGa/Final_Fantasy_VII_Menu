@@ -31,7 +31,7 @@ It began as a just CSS practice trying to imitate the game menu and ended as an 
 - Maintain the time with local Storage.
 
 ## Requeriments
-- Just maintin the folder structure.
+- Just maintain the folder structure.
 
 ## Links to other proyects
 
