@@ -163,7 +163,7 @@ function changeScreen(token){
         document.querySelector("#screen").classList.remove("screenOn");
         window.clearInterval(intervalID);
         }
-    }, 1400);   
+    }, 2900);   
 }
 
  //Removes the old class of limitBar and returns the new class to loadFile to change the color. 

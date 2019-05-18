@@ -36,7 +36,7 @@ h1, h2{
 	background-color: black;
 	animation-name: appearing3;
 	 animation-delay: 0s;
-	 animation-duration: 1.5s;
+	 animation-duration: 3s;
 	 animation-timing-function: linear;
 	 animation-fill-mode: none;	
 	 z-index:4;
@@ -50,7 +50,7 @@ h1, h2{
 	background-color: black;
 	animation-name: disappearing;
 	 animation-delay: 0s;
-	 animation-duration: 1.5s;
+	 animation-duration: 3s;
 	 animation-timing-function: linear;
 	 animation-fill-mode: none;	
 	 z-index:4;
@@ -642,7 +642,7 @@ margin-left: 0px; /*front  = 0px behind = 62.5*/
 }
 
 @keyframes appearing3{
-	0% {
+	0%{
 		opacity: 0;
 	}
 	
@@ -652,7 +652,7 @@ margin-left: 0px; /*front  = 0px behind = 62.5*/
 }
 
 @keyframes disappearing{
-	0% {
+	0%, 40%{
 		opacity: 1;
 	}
 	
