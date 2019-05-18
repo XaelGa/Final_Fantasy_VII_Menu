@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
    <img alt="SigmaΣCode" src="/img/captures/SigmaΣCode.png">
 </p>
    </br>
@@ -31,7 +31,13 @@ It began as a just CSS practice trying to imitate the game menu and ended as an 
 - Maintain the time with local Storage.
 
 ## Requeriments
+
 - Just maintain the folder structure.
+
+## See it online
+
+- [`netlify`](https://finalfantasyvii.netlify.com)
+- [`codepen`](https://codepen.io/LeonAGA/pen/rqYZNP)
 
 ## Links to other proyects
 
